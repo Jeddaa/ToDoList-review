@@ -10,17 +10,17 @@ const refresh = document.querySelector('.refresh');
 
 let tasks = [];
 
-function savedTasks() {
+function getTasks() {
   if (localStorage.getItem('tasks')) {
     tasks = JSON.parse(localStorage.getItem('tasks'));
   }
 }
-savedTasks();
+getTasks();
 
 const addTask = () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    savedTasks();
+    getTasks();
     if (input.value !== '') {
       if (tasks.length > 0) {
         tasks.push({
@@ -37,7 +37,7 @@ const addTask = () => {
       }
     }
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    savedTasks();
+    getTasks();
     displayTask(tasks, Container);
     removeTask(tasks, Container, displayTask);
     input.value = '';
@@ -45,7 +45,7 @@ const addTask = () => {
 };
 
 remove.addEventListener('click', () => {
-  savedTasks();
+  getTasks();
   const List = tasks.filter((item) => !item.completed);
   for (let i = 0; i < List.length; i += 1) {
     List[i].index = i + 1;
