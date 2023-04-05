@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1680681722366" clover="3.2.0">
+  <project timestamp="1680681722366" name="All files">
+    <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0" elements="10" coveredelements="1" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="displayTask.js" path="/home/mahabub/microverse/proj/todo-test/src/modules/displayTask.js">
+      <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="0" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
