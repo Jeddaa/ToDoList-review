@@ -22,5 +22,5 @@
       }
     ]
   },
-  "ignorePatterns": ["dist/", "build/", "babel.config.js", "coverage/"]
+  "ignorePatterns": ["dist/", "build/", "babel.config.js", "coverage/", "jest.config.js"]
 }
