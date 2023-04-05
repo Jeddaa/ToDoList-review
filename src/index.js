@@ -20,7 +20,6 @@ getTasks();
 const addTask = () => {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    getTasks();
     if (input.value !== '') {
       if (tasks.length > 0) {
         tasks.push({
@@ -37,9 +36,7 @@ const addTask = () => {
       }
     }
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    getTasks();
     displayTask(tasks, Container);
-    removeTask(tasks, Container, displayTask);
     input.value = '';
   });
 };
